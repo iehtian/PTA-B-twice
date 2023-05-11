@@ -2,16 +2,22 @@
 #include<string>
 #include<unordered_map>
 #include<vector>
+#include<iostream>
+#include<algorithm>
 using namespace std;
 
 int main(){
-    string s1 = "AAA";
-    string s2 = "CC";
-    if (s2<s1)
+    double x,res,coun=0;
+    while (cin>>x)
     {
-        printf("1");
+        res += x;
+        coun++;
+        if (cin.get()=='\n')
+        {
+            break;
+        }
+        
     }
-    else{
-        printf("2");
-    }
+    res = res / coun;
+    cout << res;
 }
