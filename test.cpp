@@ -5,19 +5,14 @@
 #include<iostream>
 #include<algorithm>
 using namespace std;
-
 int main(){
     double x,res,coun=0;
-    while (cin>>x)
+    string s1 = "2012/12/12", s2 = "2012/12/11";
+    if (s2<s1)
     {
-        res += x;
-        coun++;
-        if (cin.get()=='\n')
-        {
-            break;
-        }
-        
+        printf("1");
+    }else{
+        printf("s1小");
     }
-    res = res / coun;
-    cout << res;
+    
 }
